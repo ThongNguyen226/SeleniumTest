@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="1" parallel="false">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="utils.config.TestListener" />
+	</listeners>
+
+	<test name="Run Remote Headless">
+		<parameter name="browser" value="chrome.remote.headless" />
+		<classes>
+			<class name="tests.trello.CreateNewBoard" />
+		</classes>
+	</test>
+</suite>

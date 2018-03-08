@@ -1,0 +1,1 @@
+java -Dwebdriver.gecko.driver="../drivers/win/geckodriver.exe" -Dwebdriver.edge.driver="../drivers/win/MicrosoftWebDriver.exe" -Dwebdriver.ie.driver="../drivers/win/IEDriverServer.exe" -Dwebdriver.chrome.driver="../drivers/win/chromedriver.exe" -jar selenium-server-standalone-3.8.1.jar -role webdriver -hub http://localhost:4443/grid/register -port 5555
